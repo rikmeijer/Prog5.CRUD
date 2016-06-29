@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCollectionMVVMLight", "MusicCollectionMVVMLight\MusicCollectionMVVMLight.csproj", "{D5398665-13C9-4DDF-8E3F-0D78838E0C36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCollectionMVVMLight.uitwerking", "MusicCollectionMVVMLight.uitwerking\MusicCollectionMVVMLight.uitwerking.csproj", "{B133014E-8EAD-4916-8B46-31AFC663CD18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCollectionMVVMLight.uitwerking", "MusicCollectionMVVMLight.uitwerking\MusicCollectionMVVMLight.uitwerking.csproj", "{19168CB9-AA9F-4E3D-B362-350C53264DED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{D5398665-13C9-4DDF-8E3F-0D78838E0C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5398665-13C9-4DDF-8E3F-0D78838E0C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5398665-13C9-4DDF-8E3F-0D78838E0C36}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B133014E-8EAD-4916-8B46-31AFC663CD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B133014E-8EAD-4916-8B46-31AFC663CD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B133014E-8EAD-4916-8B46-31AFC663CD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B133014E-8EAD-4916-8B46-31AFC663CD18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19168CB9-AA9F-4E3D-B362-350C53264DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19168CB9-AA9F-4E3D-B362-350C53264DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19168CB9-AA9F-4E3D-B362-350C53264DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19168CB9-AA9F-4E3D-B362-350C53264DED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
