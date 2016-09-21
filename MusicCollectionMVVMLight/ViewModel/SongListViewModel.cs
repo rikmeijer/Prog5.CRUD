@@ -35,12 +35,26 @@ namespace MusicCollectionMVVMLight.ViewModel
         //Commands
         public ICommand ShowAddSongCommand { get; set; }
 
+        //Commands
+        public ICommand DeleteSongCommand { get; set; }
+
         public SongListViewModel()
         {
             songRepository = new DummySongRepository();
             var songList = songRepository.GetSongs().Select(s => new SongViewModel(s));
             ShowAddSongCommand = new RelayCommand(ShowAddSong, CanShowAddSong);
+            DeleteSongCommand = new RelayCommand(DeleteSong, CanDeleteSong);
             Songs = new ObservableCollection<SongViewModel>(songList);
+        }
+
+        private bool CanDeleteSong()
+        {
+            return Songs.Contains(_selectedSong);
+        }
+
+        private void DeleteSong()
+        {
+            Songs.Remove(_selectedSong);
         }
 
         public void ShowAddSong()
