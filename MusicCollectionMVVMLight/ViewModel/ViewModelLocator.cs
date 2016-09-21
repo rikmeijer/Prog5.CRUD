@@ -48,12 +48,12 @@ namespace MusicCollectionMVVMLight.ViewModel
             }
         }
 
-        public UpdateSongViewModel UpdateSong
+        public EditViewModel UpdateSong
         {
             get
             {
                 //Hmmm... Wat moeten we hier nu returnen? Denk er maar eens goed over na!
-                return null;
+                return new EditViewModel(this.SongList.SelectedSong);
             }
         }
 

@@ -44,7 +44,7 @@
                             <DataTemplate>
                                 <!-- Hier moet nog wat gebeuren om deze knop iets te laten doen-->
                                 <!-- Kijk goed naar het voorbeeld van de Delete knop -->
-                                <Button BorderThickness="0,0,0,1" BorderBrush="#FF999A9B" Foreground="White" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="60" Height="30" Background="#FF6F9BDA">Edit</Button>
+                                <Button BorderThickness="0,0,0,1" BorderBrush="#FF999A9B" Foreground="White" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="60" Height="30" Background="#FF6F9BDA" Command="{Binding DataContext.ShowEditSongCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}">Edit</Button>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

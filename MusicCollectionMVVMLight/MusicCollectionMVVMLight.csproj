@@ -102,14 +102,22 @@
     <Compile Include="Model\DummySongRepository.cs" />
     <Compile Include="Model\Song.cs" />
     <Compile Include="ViewModel\AddSongViewModel.cs" />
+    <Compile Include="ViewModel\EditViewModel.cs" />
     <Compile Include="ViewModel\SongViewModel.cs" />
     <Compile Include="ViewModel\SongListViewModel.cs" />
     <Compile Include="ViewModel\UpdateSongViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\AddSongWindow - Copy.xaml.cs">
+      <DependentUpon>AddSongWindow - Copy.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\PlayalongWindow.xaml.cs">
       <DependentUpon>PlayalongWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="View\AddSongWindow.xaml">
+    <Page Include="View\AddSongWindow - Copy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\EditSongWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,8 +129,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="View\AddSongWindow.xaml.cs">
-      <DependentUpon>AddSongWindow.xaml</DependentUpon>
+    <Compile Include="View\EditSongWindow.xaml.cs">
+      <DependentUpon>EditSongWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

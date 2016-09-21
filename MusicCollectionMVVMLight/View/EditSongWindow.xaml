@@ -1,0 +1,26 @@
+﻿<Window x:Class="MusicCollectionMVVMLight.View.EditSongWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicCollectionMVVMLight.View"
+        mc:Ignorable="d"
+        Title="EditSongWindow" Height="300" Width="300"
+        DataContext="{Binding UpdateSong, Source={StaticResource Locator}}">
+    <Border BorderThickness="12">
+        <StackPanel>
+
+            <TextBlock Text="Edit song" FontSize="28" />
+
+            <TextBlock Text="Id:" Margin="0,5,0,0"  />
+            <TextBox MaxLength="5" Text="{Binding Path=Song.Id, Mode=TwoWay}" />
+
+            <TextBlock Text="Artist:" Margin="0,5,0,0"  />
+            <TextBox MaxLength="50" Text="{Binding Path=Song.Artist, Mode=TwoWay}" />
+
+            <TextBlock Text="Title:" Margin="0,5,0,0" />
+            <TextBox MaxLength="50" Text="{Binding Path=Song.Title, Mode=TwoWay}" />
+
+        </StackPanel>
+    </Border>
+</Window>

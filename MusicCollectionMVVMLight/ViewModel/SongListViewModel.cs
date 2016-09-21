@@ -34,6 +34,7 @@ namespace MusicCollectionMVVMLight.ViewModel
 
         //Commands
         public ICommand ShowAddSongCommand { get; set; }
+        public ICommand ShowEditSongCommand { get; set; }
 
         public ICommand PlayalongCommand { get; set; }
 
@@ -48,6 +49,7 @@ namespace MusicCollectionMVVMLight.ViewModel
             songRepository = new DummySongRepository();
             var songList = songRepository.GetSongs().Select(s => new SongViewModel(s));
             ShowAddSongCommand = new RelayCommand(ShowAddSong, CanShowAddSong);
+            ShowEditSongCommand = new RelayCommand(ShowEditSong, CanShowEditSong);
             PlayalongCommand = new RelayCommand(Playalong, CanPlayalong);
             DeleteSongCommand = new RelayCommand(DeleteSong, CanDeleteSong);
 
@@ -125,6 +127,17 @@ namespace MusicCollectionMVVMLight.ViewModel
         public void HideAddSong()
         {
             _addSongWindow.Close();
+        }
+
+        public void ShowEditSong()
+        {
+            EditSongWindow _editSongWindow = new EditSongWindow();
+            _editSongWindow.Show();
+        }
+
+        public bool CanShowEditSong()
+        {
+            return SelectedSong != null;
         }
     }
 }
