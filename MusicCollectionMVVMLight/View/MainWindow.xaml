@@ -25,7 +25,7 @@
                 <!-- Hier moet nog een command gebind worden -->
                 <Button Width="50" Height="50" FontSize="16" Content="Play" 
                         Foreground="White" Background="#FFDA8229" 
-                        Grid.Column="1" >
+                        Grid.Column="1"   Command="{Binding PlayalongCommand}">
                 </Button>
 
                 <Button Width="50" Height="50" FontSize="28" Content="+" 

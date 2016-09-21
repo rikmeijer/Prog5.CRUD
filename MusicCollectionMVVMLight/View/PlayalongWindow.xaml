@@ -1,0 +1,14 @@
+﻿<Window x:Class="MusicCollectionMVVMLight.View.PlayalongWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300"
+        DataContext="{Binding SongList, Source={StaticResource Locator}}">
+    <Grid>
+        <Label Content="{Binding SelectedSong.Title}" HorizontalAlignment="Left" Margin="38,43,0,0" VerticalAlignment="Top" Height="58" Width="215" FontSize="22" FontFamily="Verdana" BorderThickness="0" Background="Red" HorizontalContentAlignment="Center"/>
+        <Label Content="{Binding SelectedSong.Artist}" HorizontalAlignment="Left" Margin="38,105,0,0" VerticalAlignment="Top" Height="58" Width="215" FontSize="15" FontFamily="Verdana" Background="Red" HorizontalContentAlignment="Center"/>
+
+        <Button Command="{Binding PrevCommand}" Content="&lt;" HorizontalAlignment="Left" Margin="38,196,0,0" VerticalAlignment="Top" Width="75" Height="67" />
+        <Button Command="{Binding NextCommand}" Content="&gt;" HorizontalAlignment="Left" Margin="178,196,0,0" VerticalAlignment="Top" Width="75" Height="67" />
+
+    </Grid>
+</Window>
